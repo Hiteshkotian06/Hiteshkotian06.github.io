@@ -71,6 +71,9 @@ section {
 
 .contact-info {
   margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px;
 }
 
 .contact-item {
