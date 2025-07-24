@@ -70,16 +70,19 @@ section {
 
 
 .contact-info {
-  margin-top: 10px;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if screen is small */
+  align-items: center;
+  gap: 30px; /* Space between items */
   margin: 20px;
+  font-family: sans-serif;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 8px;
+  font-size: 14px;
 }
 
 .contact-item img {
