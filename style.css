@@ -281,10 +281,14 @@ body {
 
 /* Feature Image */
 .feature-image {
-    width: 70%;
-    border-radius: 6px;
-    border: 1px solid #eaeaea;
-    margin: 15px 0;
+    display: block;
+    max-width: 100%; /* don't stretch beyond container */
+    width: 100%; /* match dashboard image width */
+    height: auto;
+    margin: 0 auto; /* center if smaller than container */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* crop instead of stretch if aspect ratio differs */
 }
 
 /* Responsive Design */
@@ -326,4 +330,5 @@ body {
         padding: 20px;
     }
 }
+
 
