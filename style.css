@@ -8,20 +8,14 @@
 }
 
 .container {
-  display: block; /* instead of flex */
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* stack vertically */
 }
 
 /* Sidebar */
 .sidebar {
-  width: 220px;
-  background-color: #2c3e50;
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 30px;
-  color: white;
+  position: relative; /* remove fixed */
+  width: 100%;        /* take full width */
 }
 
 .sidebar ul {
@@ -79,10 +73,8 @@
 /* Main Content */
 
 .main-content {
-  margin-left: 0; /* remove sidebar offset */
+  margin-left: 0;     /* no offset */
   width: 100%;
-  padding: 40px;
-  background-color: #f9f9f9;
 }
 
 section {
@@ -222,5 +214,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
 
 
