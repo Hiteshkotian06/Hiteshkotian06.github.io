@@ -48,6 +48,34 @@
   transform: translateX(5px);
 }
 
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+
+.contact-item img {
+  width: 24px;         /* fixed size */
+  height: 24px;        /* fixed size */
+  object-fit: contain; /* maintain aspect ratio */
+  margin-right: 8px;   /* space between icon and text */
+}
+
+.contact-item a {
+  color: inherit;      /* same color as surrounding text */
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
 /* Main Content */
 .main-content {
   margin-left: 240px;
@@ -193,3 +221,4 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
