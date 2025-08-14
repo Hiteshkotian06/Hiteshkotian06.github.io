@@ -127,3 +127,32 @@ section {
     flex-direction: column;
   }
 }
+
+/* Tech Stack Tags */
+.tech-stack {
+  margin: 15px 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 15px;
+  margin-right: 8px;
+  font-size: 0.8em;
+  color: #333;
+}
+
+/* Image Captions */
+.image-caption {
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Project Links */
+.project-links {
+  margin-top: 15px;
+}
