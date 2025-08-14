@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitesh Kotian</title>
+    <title>Hitesh Kotian | Data Analytics Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,23 +11,25 @@
     <!-- Sidebar -->
     <nav class="sidebar">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#dashboards">Analytics Dashboards</a></li>
+        <li><a href="#ga-implementations">GA/GTM Implementations</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#data-apps">Data Applications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <!-- Main Content -->
     <div class="main-content">
-      <section id="about">
+      <!-- Brief Intro Section -->
+      <section class="intro">
         <div class="header-row">
-        <h1>Hitesh Dinesh Kotian</h1>
-        <h3>Data Analyst & Web Analyst</h3>
+          <h1>Hitesh Dinesh Kotian</h1>
+          <h3>Data Analyst & Web Analyst</h3>
         </div>
-        <hr />
-
+        <div class="tagline">
+          <p>Transforming raw data into actionable insights through dashboards, analytics implementations, and data applications</p>
+        </div>
         <div class="contact-info">
           <div class="contact-item">
             <img src="Image/gmail_logo.png" alt="Email" />
@@ -44,112 +46,165 @@
         </div>
       </section>
 
-
-        <section id="projects">
-  <h2>Analytical Projects</h2>
-  
-  <!-- Project 1 -->
-  <div class="project">
-    <h3>GMV Optimization Dashboard</h3>
-    <div class="project-content">
-      <div class="project-description">
-        <p>Dashboard built in Looker/Tableau that tracks key GMV metrics and marketing ROI.</p>
-        <ul>
-          <li>Increased GMV visibility by 40% for stakeholders</li>
-          <li>Reduced time-to-insight from hours to minutes</li>
-        </ul>
-        <p>Technologies: Looker, BigQuery, SQL</p>
-      </div>
-      <div class="project-image">
-        <img src="Image/GMV.png" alt="GMV Dashboard">
-      </div>
-        <div class="project-image">
-        <img src="Image/GMV_Daily.png" alt="GMV Dashboard">
-      </div>
-        </div>
-        <div class="project-image">
-        <img src="Image/payment_mtd_hourly.png" alt="GMV Dashboard">
-      </div>
-    </div>
-  </div>
-  
-  <!-- Project 2 -->
-  <div class="project">
-    <h3>GA4/GTM Implementation</h3>
-    <div class="project-content">
-      <div class="project-description">
-        <p>Implemented tracking for key user journeys and A/B tests.</p>
-        <ul>
-          <li>Created 10+ custom tags and triggers</li>
-          <li>Improved conversion tracking accuracy by 25%</li>
-        </ul>
-        <p>Technologies: Google Tag Manager, GA4, JavaScript</p>
-      </div>
-      <div class="project-image">
-        <img src="dashboards/gtm-implementation.jpg" alt="GTM Implementation">
-      </div>
-    </div>
-  </div>
-</section>
-<section id="case-studies">
-  <h2>Detailed Case Studies</h2>
-  
-  <div class="case-study">
-    <h3>Optimizing Marketing Spend Through Keyword Analysis</h3>
-    <div class="case-study-content">
-      <h4>Challenge</h4>
-      <p>Marketing team was spending significant budget on underperforming keywords...</p>
-      
-      <h4>Solution</h4>
-      <p>Analyzed keyword performance data from Google Search Console and GA4...</p>
-      
-      <h4>Results</h4>
-      <ul>
-        <li>Reduced marketing spend by 15% while maintaining GMV</li>
-        <li>Identified 5 high-performing keyword clusters to focus on</li>
-      </ul>
-      
-      <div class="visualizations">
-        <img src="images/keyword-analysis-1.png" alt="Keyword Performance Before">
-        <img src="images/keyword-analysis-2.png" alt="Keyword Performance After">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Data Applications</h2>
-  
-  <!-- Streamlit App Project -->
-  <div class="project">
-    <h3>Real-time Data Analysis Dashboard</h3>
-    <div class="project-content">
-      <div class="project-description">
-        <p>Interactive Streamlit application for analyzing and visualizing our recent dataset.</p>
-        <ul>
-          <li>Processed and visualized complex dataset in real-time</li>
-          <li>Implemented interactive filters and controls</li>
-          <li>Generated actionable insights through visualizations</li>
-        </ul>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Streamlit</span>
-          <span class="tech-tag">Pandas</span>
-          <span class="tech-tag">Plotly</span>
-        </div>
-        <div class="project-links">
-          <a href="https://cx-analysis-subscription.streamlit.app/" target="_blank" class="btn">Launch Live App</a>
-          <a href="https://github.com/Hiteshkotian06/Streamlit/blob/main/Bonus_streamlit_dashboard.py" target="_blank" class="btn">View Source Code</a>
-        </div>
-      </div>
-      <div class="project-image">
-        <img src="Image/streamlit.png" alt="Streamlit App Screenshot">
-        <div class="image-caption">Interactive dashboard showing key metrics</div>
-      </div>
-    </div>
-  </div>
-</section>
+      <!-- Dashboards Section -->
+      <section id="dashboards">
+        <h2>Analytics Dashboards</h2>
         
+        <div class="project">
+          <h3>GMV Optimization Dashboard</h3>
+          <div class="project-content">
+            <div class="project-description">
+              <p>Interactive dashboard tracking Gross Merchandise Value and marketing ROI with drill-down capabilities.</p>
+              <ul>
+                <li>Increased GMV visibility by 40% for stakeholders</li>
+                <li>Reduced time-to-insight from hours to minutes</li>
+                <li>Enabled data-driven decision making for marketing spend</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Looker</span>
+                <span class="tech-tag">BigQuery</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Data Visualization</span>
+              </div>
+            </div>
+            <div class="dashboard-gallery">
+              <div class="dashboard-image">
+                <img src="Image/GMV.png" alt="GMV Overview Dashboard">
+                <p>GMV performance overview</p>
+              </div>
+              <div class="dashboard-image">
+                <img src="Image/GMV_Daily.png" alt="Daily GMV Trends">
+                <p>Daily GMV trends analysis</p>
+              </div>
+              <div class="dashboard-image">
+                <img src="Image/payment_mtd_hourly.png" alt="Payment Method Analysis">
+                <p>Payment method performance by hour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GA/GTM Implementations -->
+      <section id="ga-implementations">
+        <h2>Analytics Implementations</h2>
+        
+        <div class="project">
+          <h3>GA4 & GTM Configuration</h3>
+          <div class="project-content">
+            <div class="project-description">
+              <p>Custom implementation of Google Analytics 4 and Google Tag Manager for comprehensive tracking.</p>
+              <ul>
+                <li>Created 10+ custom tags and triggers for key user journeys</li>
+                <li>Improved conversion tracking accuracy by 25%</li>
+                <li>Implemented A/B test tracking for data-driven optimization</li>
+                <li>Integrated with BigQuery for advanced analysis</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Google Analytics 4</span>
+                <span class="tech-tag">Google Tag Manager</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Data Layer</span>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="Image/gtm-implementation.jpg" alt="GTM Implementation Screenshot">
+              <div class="image-caption">Custom tag configuration in GTM</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies -->
+      <section id="case-studies">
+        <h2>Data Analysis Case Studies</h2>
+        
+        <div class="case-study">
+          <h3>Optimizing Marketing Spend Through Keyword Analysis</h3>
+          <div class="case-study-content">
+            <h4>Challenge</h4>
+            <p>Marketing team was spending significant budget on underperforming keywords without clear visibility into which terms were actually driving conversions.</p>
+            
+            <h4>Solution</h4>
+            <p>Conducted comprehensive analysis of keyword performance data from Google Search Console and GA4, correlating search terms with actual conversion metrics and GMV contribution.</p>
+            
+            <h4>Implementation</h4>
+            <ul>
+              <li>Built BigQuery pipeline to join Search Console and GA4 data</li>
+              <li>Created Looker dashboard to visualize keyword performance</li>
+              <li>Developed scoring system to rank keywords by ROI</li>
+            </ul>
+            
+            <h4>Results</h4>
+            <ul>
+              <li>Reduced marketing spend by 15% while maintaining GMV</li>
+              <li>Identified 5 high-performing keyword clusters to focus on</li>
+              <li>Improved CTR by 8% through better keyword targeting</li>
+            </ul>
+            
+            <div class="visualizations">
+              <img src="Image/keyword-analysis.png" alt="Keyword Performance Dashboard">
+              <p>Keyword performance analysis dashboard</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Applications -->
+      <section id="data-apps">
+        <h2>Interactive Data Applications</h2>
+        
+        <div class="project">
+          <h3>Customer Experience Analysis Dashboard</h3>
+          <div class="project-content">
+            <div class="project-description">
+              <p>Real-time Streamlit application for analyzing customer subscription patterns and experience metrics.</p>
+              <ul>
+                <li>Processes and visualizes complex datasets in real-time</li>
+                <li>Interactive filters for segment analysis</li>
+                <li>Automated report generation</li>
+                <li>Hosted on Streamlit Cloud for easy access</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Plotly</span>
+              </div>
+              <div class="project-links">
+                <a href="https://cx-analysis-subscription.streamlit.app/" target="_blank" class="btn">Launch Live App</a>
+                <a href="https://github.com/Hiteshkotian06/Streamlit/blob/main/Bonus_streamlit_dashboard.py" target="_blank" class="btn">View Source Code</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="Image/streamlit.png" alt="Streamlit App Screenshot">
+              <div class="image-caption">Interactive customer experience dashboard</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-methods">
+          <div class="contact-card">
+            <img src="Image/email-icon.png" alt="Email">
+            <h4>Email</h4>
+            <p>hitesh.kotian06@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <img src="Image/linkedin-icon.png" alt="LinkedIn">
+            <h4>LinkedIn</h4>
+            <p><a href="https://linkedin.com/in/hiteshkotian" target="_blank">linkedin.com/in/hiteshkotian</a></p>
+          </div>
+          <div class="contact-card">
+            <img src="Image/github-icon.png" alt="GitHub">
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/Hiteshkotian06" target="_blank">github.com/Hiteshkotian06</a></p>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </body>
