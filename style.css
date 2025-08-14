@@ -8,7 +8,7 @@
 }
 
 .container {
-  display: flex;
+  display: block; /* instead of flex */
   min-height: 100vh;
 }
 
@@ -77,10 +77,11 @@
 
 
 /* Main Content */
+
 .main-content {
-  margin-left: 240px;
+  margin-left: 0; /* remove sidebar offset */
+  width: 100%;
   padding: 40px;
-  width: calc(100% - 240px);
   background-color: #f9f9f9;
 }
 
@@ -193,12 +194,12 @@ h3 {
     flex-direction: column;
   }
   
-  .sidebar {
-    width: 100%;
-    position: relative;
-    min-height: auto;
-    padding: 15px 0;
-  }
+.sidebar {
+  width: 100%;       /* sidebar takes full width */
+  position: relative; /* no fixed position */
+  min-height: auto;
+  padding: 20px 0;
+}
   
   .sidebar ul {
     display: flex;
@@ -221,4 +222,5 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
 
