@@ -50,6 +50,15 @@ body {
     margin-bottom: 30px; /* Keep spacing between cards */
 }
 
+.feature-image {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+}
+
 /* For dashboard gallery - make it full width */
 .dashboard-gallery {
     display: grid;
@@ -89,3 +98,4 @@ body {
         padding: 25px;
     }
 }
+
