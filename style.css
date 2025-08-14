@@ -52,7 +52,7 @@ body {
 
 .feature-image {
     display: block;
-    max-width: 70%;
+    max-width: 40%;
     height: auto;
     margin: 20px auto;
     border-radius: 6px;
@@ -98,4 +98,5 @@ body {
         padding: 25px;
     }
 }
+
 
