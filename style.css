@@ -59,15 +59,6 @@ body {
     width: 100%; /* Ensure full width */
 }
 
-.feature-image {
-    display: block;
-    max-width: 40%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 6px;
-    border: 1px solid #eaeaea;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
@@ -98,6 +89,7 @@ body {
         padding: 25px;
     }
 }
+
 
 
 
