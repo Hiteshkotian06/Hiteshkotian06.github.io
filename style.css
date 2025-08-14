@@ -282,13 +282,14 @@ body {
 /* Feature Image */
 .feature-image {
     display: block;
-    max-width: 100%; /* don't stretch beyond container */
-    width: 100%; /* match dashboard image width */
-    height: auto;
-    margin: 0 auto; /* center if smaller than container */
+    width: 100%; /* Match container width */
+    max-height: 400px; /* Set a maximum height similar to dashboard images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Show entire image without cropping */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* crop instead of stretch if aspect ratio differs */
+    margin: 15px 0; /* Match dashboard image spacing */
+    border: 1px solid #eaeaea; /* Match dashboard image border */
 }
 
 /* Responsive Design */
@@ -330,5 +331,6 @@ body {
         padding: 20px;
     }
 }
+
 
 
