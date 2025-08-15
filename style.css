@@ -413,11 +413,40 @@ body {
         padding: 20px;
     }
 }
+/* Coding Stats Section */
+.coding-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
 
+.stat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 0.95em;
+}
 
+.stat-item img {
+    height: 20px;
+    margin-right: 8px;
+}
 
+.loader {
+    color: #7f8c8d;
+    font-style: italic;
+}
 
-
-
-
-
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .coding-stats {
+        flex-direction: column;
+    }
+}
