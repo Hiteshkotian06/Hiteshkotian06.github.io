@@ -279,19 +279,58 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
-/* Feature Image */
-/* .feature-image { */
-/*     display: block; */
-/*     width: 100%; /* Match container width */ */
-/*     max-height: 400px; /* Set a maximum height similar to dashboard images */ */
-/*     height: auto; /* Maintain aspect ratio */ */
-/*     object-fit: contain; /* Show entire image without cropping */ */
-/*     border-radius: 8px; */
-/*     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
-/*     margin: 15px 0; /* Match dashboard image spacing */ */
-/*     border: 1px solid #eaeaea; /* Match dashboard image border */ */
-/* } */
+/* GA/GTM Specific Styles */
+.ga-gtm-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
 
+.ga-gtm-card {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ga-gtm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.ga-gtm-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.ga-gtm-caption {
+    padding: 15px;
+}
+
+.ga-gtm-caption h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.ga-gtm-caption p {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* Feature image sizing */
+.feature-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -331,6 +370,7 @@ body {
         padding: 20px;
     }
 }
+
 
 
 
