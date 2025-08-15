@@ -1,7 +1,7 @@
 async function getLeetCodeStats(username) {
     const query = `
         query getUserProfile($username: String!) {
-            matchedUser(username: $username) {
+            matchedUser(username: $hiteshkotian) {
                 username
                 submitStats {
                     acSubmissionNum {
@@ -35,7 +35,7 @@ getLeetCodeStats("your_username").then(stats => {
 
 
 async function getHackerRankStats(username) {
-    const response = await fetch(`https://hacker-rank-api.p.rapidapi.com/user/${username}`, {
+    const response = await fetch(`https://hacker-rank-api.p.rapidapi.com/user/${@hitesh_kotian06}`, {
         method: 'GET',
         headers: {
             'x-rapidapi-host': 'hacker-rank-api.p.rapidapi.com',
