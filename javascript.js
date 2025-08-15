@@ -32,3 +32,19 @@ getLeetCodeStats("your_username").then(stats => {
     document.getElementById("leetcode-solved").textContent =
         `LeetCode: ${stats.reduce((sum, item) => sum + item.count, 0)} problems solved`;
 });
+
+
+async function getHackerRankStats(username) {
+    const response = await fetch(`https://hacker-rank-api.p.rapidapi.com/user/${username}`, {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-host': 'hacker-rank-api.p.rapidapi.com',
+            'x-rapidapi-key': 'YOUR_RAPIDAPI_KEY'
+        }
+    });
+    const data = await response.json();
+    console.log(data);
+    document.getElementById("hackerrank-solved").textContent =
+        `HackerRank: ${data.solved} problems solved`;
+}
+
