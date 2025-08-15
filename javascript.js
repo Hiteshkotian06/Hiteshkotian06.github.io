@@ -1,50 +1,34 @@
+// Updated LeetCode function with error handling
 async function getLeetCodeStats(username) {
-    const query = `
-        query getUserProfile($username: String!) {
-            matchedUser(username: $hiteshkotian) {
-                username
-                submitStats {
-                    acSubmissionNum {
-                        difficulty
-                        count
-                    }
-                }
-            }
-        }
-    `;
-
-    const response = await fetch("https://leetcode.com/graphql", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            query,
-            variables: { username }
-        })
-    });
-
-    const data = await response.json();
-    return data.data.matchedUser.submitStats.acSubmissionNum;
+    try {
+        const response = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const data = await response.json();
+        document.getElementById("leetcode-solved").textContent = 
+            `LeetCode: ${data.totalSolved} problems solved (Easy: ${data.easySolved}, Medium: ${data.mediumSolved}, Hard: ${data.hardSolved})`;
+    } catch (error) {
+        console.error("Error fetching LeetCode stats:", error);
+        document.getElementById("leetcode-solved").textContent = 
+            "LeetCode: Data unavailable";
+    }
 }
 
-getLeetCodeStats("your_username").then(stats => {
-    console.log("LeetCode Stats:", stats);
-    // Example: Insert into HTML
-    document.getElementById("leetcode-solved").textContent =
-        `LeetCode: ${stats.reduce((sum, item) => sum + item.count, 0)} problems solved`;
-});
-
-
+// Updated HackerRank function with error handling
 async function getHackerRankStats(username) {
-    const response = await fetch(`https://hacker-rank-api.p.rapidapi.com/user/${@hitesh_kotian06}`, {
-        method: 'GET',
-        headers: {
-            'x-rapidapi-host': 'hacker-rank-api.p.rapidapi.com',
-            'x-rapidapi-key': 'YOUR_RAPIDAPI_KEY'
-        }
-    });
-    const data = await response.json();
-    console.log(data);
-    document.getElementById("hackerrank-solved").textContent =
-        `HackerRank: ${data.solved} problems solved`;
+    try {
+        // Note: HackerRank doesn't have an official API, so we'll use a badge approach
+        document.getElementById("hackerrank-solved").innerHTML = 
+            `<img src="https://img.shields.io/badge/HackerRank-${username}-brightgreen?logo=hackerrank&style=flat" alt="HackerRank Profile">`;
+    } catch (error) {
+        console.error("Error with HackerRank badge:", error);
+        document.getElementById("hackerrank-solved").textContent = 
+            "HackerRank: Data unavailable";
+    }
 }
 
+// Call the functions when the page loads
+window.onload = function() {
+    getLeetCodeStats("hiteshkotian"); // Replace with your LeetCode username
+    getHackerRankStats("hitesh_kotian06"); // Replace with your HackerRank username
+};
