@@ -126,7 +126,7 @@ body {
 /* Dashboard Gallery */
 .dashboard-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-template-columns: repeat(2, 1fr);   /* repeat(auto-fit, minmax(300px, 1fr));  this was auto fit*/
     gap: 25px;
     margin: 25px 0;
 }
@@ -450,3 +450,4 @@ body {
         flex-direction: column;
     }
 }
+
